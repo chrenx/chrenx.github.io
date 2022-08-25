@@ -22,10 +22,15 @@ const links = [
         to: '/',
         active: 'home'
     },
+    // {
+    //     name: 'Portfolio',
+    //     to: '/portfolio',
+    //     active: 'portfolio'
+    // }, 
     {
-        name: 'Portfolio',
-        to: '/portfolio',
-        active: 'portfolio'
+        name: 'Publication',
+        to: '/publication',
+        active: 'publication'
     }
 ]
 

@@ -14,7 +14,21 @@ i {
   &.green {
     color: $green;
   }
+
+  &.transparent {
+    color: #8c8c8c;
+  }
 }
+
+
+.bold {
+  font-weight: bold;
+}
+
+.white {
+  color: white;
+}
+
 
 .terminal {
   p, li {

@@ -37,6 +37,14 @@ a:hover {
   transition: color 200ms ease;
 }
 
+// .fa fa-linkedin {
+//   color: #0099CC;
+// }
+// @if('.fa-linkedin'){
+//   color: #0099CC;
+// }
+
+
 @keyframes wave {
   0% { transform: rotate( 0.0deg) }
   10% { transform: rotate(14.0deg) }

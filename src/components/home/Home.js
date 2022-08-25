@@ -16,7 +16,7 @@ export default function Home() {
               height={{xs: '35vh', md: '40vh'}}
               borderRadius={'50%'} p={'0.75rem'} mb={{xs: '1rem', sm: 0}} mr={{xs: 0, md: '2rem'}}/>
          <Box>
-            <h1>Hi, I'm <span style={{background: info.gradient, webkitBackgroundClip: 'text', webkitTextFillColor: 'transparent'}}>{info.firstName}</span><span className={Style.hand}>🤚</span>
+            <h1>Hi, I'm <span style={{background: info.gradient, webkitBackgroundClip: 'text', webkitTextFillColor: 'transparent'}}>{info.firstName}</span> <span style={{background: info.gradient, webkitBackgroundClip: 'text', webkitTextFillColor: 'transparent'}}>{info.lastName}</span><span className={Style.hand}>🤚</span>
             </h1>
             <h2>I'm {info.position}.</h2>
             <Box component={'ul'} p={'0.8rem'}>
@@ -26,7 +26,7 @@ export default function Home() {
             </Box>
             <Box display={'flex'} gap={'1.5rem'} justifyContent={'center'} fontSize={{xs: '2rem', md: '2.5rem'}}>
                {info.socials.map(social => (
-                  <SocialIcon link={social.link} icon={social.icon} />
+                  <SocialIcon link={social.link} icon={social.icon} style={social.style}/>
                ))}
             </Box>
          </Box>

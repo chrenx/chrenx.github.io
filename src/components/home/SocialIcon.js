@@ -1,11 +1,11 @@
 import React from 'react';
 
 function SocialIcon(props) {
-    const {link, icon} = props;
+    const {link, icon, style} = props;
     return (
         <a target="_blank"
            rel="noopener noreferrer" href={link}>
-            <i className={icon} aria-hidden="true"/>
+            <i className={icon} aria-hidden="true" style={{color: style}}/>
         </a>
     );
 }
