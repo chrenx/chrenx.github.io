@@ -1,1 +1,3 @@
-WELCOME to my website!
+WELCOME to my website!  
+  
+npm start run
