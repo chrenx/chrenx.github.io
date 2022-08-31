@@ -120,7 +120,7 @@ export const info = {
     portfolio: [ // This is where your portfolio projects will be detailed
         {
             title: "Instagram Clone",
-            live: "", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            live: "https://youtu.be/p3tauHGvMbM", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source: "https://github.com/chrenx/instagram-clone", // this should be a link to the **repository** of the project, where the code is hosted.
             image: instaPic
         }
