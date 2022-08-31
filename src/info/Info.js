@@ -22,7 +22,7 @@ export const info = {
     firstName: "Haocheng(Leo)",
     lastName: "Ren",
     initials: "chrenx",
-    position: "a student and a Software Development Engineer",
+    position: "a king and a Software Development Engineer",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`,
     baseColor: colors[0],
