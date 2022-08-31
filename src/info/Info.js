@@ -1,5 +1,5 @@
 import self from "../img/self.png"
-import mock1 from "../img/mock1.png"
+import instaPic from "../img/instagram-clone.png"
 import mock2 from "../img/mock2.png"
 import mock3 from "../img/mock3.png"
 import mock4 from "../img/mock4.png"
@@ -122,7 +122,7 @@ export const info = {
             title: "Instagram Clone",
             live: "", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source: "https://github.com/chrenx/instagram-clone", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1
+            image: instaPic
         }
         // {
         //     title: "Project 2",
