@@ -2,6 +2,8 @@ import React from 'react';
 import PortfolioBlock from "./PortfolioBlock";
 import {Box, Grid} from "@mui/material";
 import {info} from "../../info/Info";
+import underConstruction from "../../img/underConstructionSign.png";
+
 
 export default function Portfolio() {
     return (
@@ -13,6 +15,12 @@ export default function Portfolio() {
                    </Grid>
                 ))}
             </Grid>
+        
+            <Grid container display={'flex'} justifyContent={'center'}>
+                <Box component={'img'} src={underConstruction} alt={'under-construction-sign'}/>
+            </Grid>
+        
         </Box>
+        
     );
 };
