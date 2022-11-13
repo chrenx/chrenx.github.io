@@ -3,22 +3,36 @@ import IconLink from "./IconLink";
 import {Box} from "@mui/material";
 
 function PortfolioBlock(props) {
-   const {image, live, source, title} = props;
-   return (
-      <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
-         <Box component={'img'} src={image} alt={'mockup'}/>
-         <h1 style={{fontSize: '2rem'}}>{title}</h1>
-         <Box className={'portfolio'} display={'flex'} flexDirection={'column'} gap={'0.5rem'}
-              alignItems={'center'} fontSize={'1.5rem'} py={'2rem'}>
-            <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
-               <IconLink link={live} title={'Live Demo'} icon={'fa fa-safari'}/>
-            </Box>
-            <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
-               <IconLink link={source} title={'Source Code'} icon={'fa fa-code'}/>
-            </Box>
-         </Box>
-      </Box>
-   );
+   const {live, source, title, description} = props;
+   if (source !== "None") {
+      return (
+         <div>
+            <div style={{fontSize: "20px"}}>{title}</div>
+            <div style={{marginTop: "1rem", marginBottom: "1rem"}}>
+               <a href={live} target={"_blank"} rel="noopener noreferrer" style={{border: "2px solid", borderRadius: "25px", padding: "5px", marginRight: "5px"}}>
+                  <i className={'fa fa-safari'}/> Live Demo
+               </a>
+               <a href={source} target={"_blank"} rel="noopener noreferrer" style={{border: "2px solid", borderRadius: "25px", padding: "5px"}}>
+                  <i className={'fa fa-code'}/> Source Code
+               </a>
+            </div>
+            <div style={{color: 'gray'}}>{description}</div>
+         </div>
+      );
+   } else {
+      return (
+         <div>
+            <div style={{fontSize: "20px"}}>{title}</div>
+            <div style={{marginTop: "1rem", marginBottom: "1rem"}}>
+               <a href={live} target={"_blank"} rel="noopener noreferrer" style={{border: "2px solid", borderRadius: "25px", padding: "5px", marginRight: "5px"}}>
+                  <i className={'fa fa-safari'}/> Live Demo
+               </a>
+            </div>
+            <div style={{color: 'gray'}}>{description}</div>
+         </div>
+      );
+   }
+      
 }
 
 export default PortfolioBlock;

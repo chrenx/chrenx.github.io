@@ -1,9 +1,6 @@
 import self from "../img/self.png"
 import instaPic from "../img/instagram-clone.png"
-import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
+import rubikon from "../img/Rubikon.png"
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -122,7 +119,15 @@ export const info = {
             title: "Instagram Clone",
             live: "https://youtu.be/p3tauHGvMbM", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source: "https://github.com/chrenx/instagram-clone", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: instaPic
+            image: instaPic,
+            description: "Thie is a web project that clones Instagram."
+        },
+        {
+            title: "Rubikon: A Multimodal Tutor for 3D Physical Task Learning",
+            live: "https://www.youtube.com/watch?v=ynQstKN1RXA", 
+            source: "None",
+            image: rubikon,
+            description: "This project aims at improve users' self learning experience on 3D physical tasks like surgery. Rubik's Cube is one instance. Still in the process to the higher level..."
         }
         // {
         //     title: "Project 2",

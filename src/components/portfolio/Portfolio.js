@@ -7,14 +7,24 @@ import underConstruction from "../../img/underConstructionSign.png";
 
 export default function Portfolio() {
     return (
-        <Box>
-            <Grid container display={'flex'} justifyContent={'center'}>
-                {info.portfolio.map(project => (
-                   <Grid item xs={12} md={4}>
-                       <PortfolioBlock image={project.image} live={project.live} source={project.source} title={project.title} />
-                   </Grid>
-                ))}
-            </Grid>
+        <Box sx={{m:"2rem"}}>
+            {/* <Grid container display={'flex'} justifyContent={'center'}> */}
+            {/* <Grid container> */}
+
+            {info.portfolio.map(project => (
+                <div style={{padding: '1rem'}}>
+                <Grid container>
+                    <Grid item xs={3}>
+                        <img src={project.image} style={{width: "90%"}}></img>
+                    </Grid>
+                    <Grid item xs={9}>
+                        <PortfolioBlock live={project.live} source={project.source} title={project.title} description={project.description} />
+                    </Grid>
+                </Grid>
+                </div>
+                
+            ))}
+            {/* </Grid> */}
         
             <Grid container display={'flex'} justifyContent={'center'}>
                 <Box component={'img'} src={underConstruction} alt={'under-construction-sign'}/>
